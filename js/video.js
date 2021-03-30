@@ -36,8 +36,7 @@ var original = document.querySelector("#orig");
 		video.volume = this.value / 100;
 		console.log(video.volume)
 
-		volume.innerHTML = video.volume * 100 + "%"
-
+		volume.innerHTML = video.volume * 100 + "%";
 	});
 
 	slower.addEventListener("click", function(){
