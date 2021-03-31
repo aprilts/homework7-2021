@@ -24,6 +24,7 @@ var original = document.querySelector("#orig");
 	play.addEventListener("click", function() {
 		console.log("Play Video")
 		video.play();
+		volume.innerHTML = video.volume * 100 + "%"
 	}); 
 
 	
@@ -35,7 +36,7 @@ var original = document.querySelector("#orig");
 	slider.addEventListener("change", function() {
 		video.volume = this.value / 100;
 		console.log(video.volume)
-
+		
 		volume.innerHTML = video.volume * 100 + "%";
 	});
 
